@@ -11,24 +11,19 @@ body {
   width: 466px;
 }
 .card {
+  display: block;
   margin: 0 auto;
-  /* display: flex; */
-  /* position: absolute; */
+  padding: 50px;
   width: 400px;
   background: url("../img/Image.png") center center no-repeat;
 }
-/* .card::after {
-  background: url("../img/shadow.png");
-} */
+
 .header {
   position: relative;
 }
-.header__actions {
-  position: absolute;
-  left: 67px;
-  top: 56px;
-}
 .actions {
+  display: block;
+
   font-family: "Quicksand", sans-serif;
   line-height: 22px;
   font-size: 18px;
@@ -44,7 +39,7 @@ body {
   padding: 2px;
 }
 .actions a:hover {
-  border: 1px solid rgb(66, 8, 121);
+  text-decoration: underline #e66a64;
 }
 .join {
   color: #e1c2f1;
@@ -55,32 +50,35 @@ body {
   display: flex;
 }
 .field {
-  flex-direction: column;
   margin-bottom: 27px;
   color: #fbf6e4;
   font-size: 16px;
 }
-#username,
-#password {
+label .username,
+label .password {
   border: 2px solid rgba(191, 185, 204, 0.54);
-  box-sizing: border-box;
+
   background: none;
   height: 46px;
   width: 265px;
 }
+.check {
+  display: flex;
+
+  height: 16px;
+}
 .button {
-  font-weight: bold;
+  font-family: " Quicksand", sans-serif;
+  font-weight: 700;
   font-size: 18px;
   line-height: 22px;
-
+  margin-top: 32px;
   background: #23ae92;
   color: #fbf6e4;
 
   width: 265px;
   height: 42px;
   border: none;
-  margin-left: 67px;
-  margin-bottom: 27px;
 
   padding: 10px 100px;
   cursor: pointer;
@@ -88,15 +86,17 @@ body {
 .button:hover {
   background: #23ae61;
 }
+.links {
+  display: flex;
+  justify-content: space-between;
+}
 .links a {
   font-family: " Quicksand", sans-serif;
   text-decoration: none;
   font-size: 13px;
   line-height: 16px;
   color: #b9b9cc;
-  margin-bottom: 56px;
-  margin-left: 67px;
 }
 .links a:hover {
-  background-color: #9c71cc;
+  text-decoration: underline #9c71cc;
 }
